@@ -78,9 +78,14 @@ let page = {
     jhuangPing.reloadPage();
     jhuangPing.menu();
     jhuangPing.click({
+      gotop: {
+        enable: true,
+        bk: '.ft-gotop',
+        btn: '.js-gotop',
+      },
       back: {
         enable: true,
-        ele: '.js-prev-page', // 返回按鈕的選擇器
+        ele: '.js-prev-page',
       },
     });
     jhuangPing.edit({
@@ -158,6 +163,17 @@ let page = {
   },
   products: () => {
     swiper.productsDetail();
+
+    $('.prod-anchor').find('.el-point').click(function () {
+      $('.prod-anchor').find('.el-info').removeClass('is-open');
+      $(this).next('.el-info').addClass('is-open');
+    });
+
+    $(document).on('click', function (e) {
+      if (!$(e.target).closest('.prod-anchor .el-point').length) {
+        $('.prod-anchor').find('.el-info').removeClass('is-open');
+      }
+    });
   },
   faq: () => {
     $('.js-qa-title').click(function (event) {
