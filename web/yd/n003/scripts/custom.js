@@ -135,7 +135,7 @@ let page = {
       }
     })();
 
-    $('.js-set-store').click(function () {
+    $('.c-btn-ft-cookie').click(function () {
       $('.ft-cookie').addClass('an-hide')
       jhuangPing.setStore('jhuangPingStore', {
         isPlicyShow: true
@@ -197,3 +197,4 @@ $(document).ready(function () {
   page.init();
 
 });
+
