@@ -77,6 +77,7 @@ let page = {
     });
     jhuangPing.reloadPage();
     jhuangPing.menu();
+    jhuangPing.lightbox();
     jhuangPing.click({
       gotop: {
         enable: true,
