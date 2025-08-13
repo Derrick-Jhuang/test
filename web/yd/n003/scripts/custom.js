@@ -93,7 +93,20 @@ let page = {
       element: '.l-edit',
       isAnimation: true,
     });
-    
+    (function policy() {
+      const _store = jhuangPing.getStore('jhuangPingStore')
+      if (_store.isPlicyShow) {
+        $('.ft-cookie').addClass('hide')
+      }
+
+      $('.c-btn-ft-cookie').click(function () {
+        $('.ft-cookie').addClass('an-hide')
+        jhuangPing.setStore('jhuangPingStore', {
+          isPlicyShow: true
+        });
+      });
+    })();
+
     AOS.init({
       duration: 1000,
       // easing: 'ease-in-out-quad',
@@ -134,14 +147,14 @@ let page = {
       if (_store.isPlicyShow) {
         $('.ft-cookie').addClass('hide')
       }
-    })();
 
-    $('.c-btn-ft-cookie').click(function () {
-      $('.ft-cookie').addClass('an-hide')
-      jhuangPing.setStore('jhuangPingStore', {
-        isPlicyShow: true
+      $('.js-set-store').click(function () {
+        $('.ft-cookie').addClass('an-hide')
+        jhuangPing.setStore('jhuangPingStore', {
+          isPlicyShow: true
+        });
       });
-    });
+    })();
   },
   index: () => {
     swiper.index();
@@ -196,6 +209,4 @@ let page = {
 
 $(document).ready(function () {
   page.init();
-
 });
-
