@@ -176,6 +176,7 @@ let page = {
     // AOS.refresh();
   },
   products: () => {
+    console.log('dk tset');
     swiper.productsDetail();
 
     $('.prod-anchor').find('.el-point').click(function () {
@@ -187,6 +188,34 @@ let page = {
       if (!$(e.target).closest('.prod-anchor .el-point').length) {
         $('.prod-anchor').find('.el-info').removeClass('is-open');
       }
+    });
+
+    function updatePosition() {
+      if ($(window).width() <= 1024) {
+        $('[class="c-crd:prod-anchor"]').each(function () {
+          const $anchor = $(this);
+
+          $anchor.find('.c-crd__point').each(function () {
+            const $point = $(this);
+            const $text = $point.find('.el-info');
+            const pointLeft = $point.position().left;
+
+            $text.css({
+              left: `calc(50% - ${pointLeft}px - 150px)`
+            });
+          });
+        });
+      } else {
+        // 螢幕大於 1024 時移除 inline style，避免干擾桌機版
+        $('.el-info').css('left', '');
+      }
+    }
+
+    updatePosition();
+
+    // 視窗縮放時重新計算
+    $(window).on('resize', function () {
+      updatePosition();
     });
   },
   faq: () => {
