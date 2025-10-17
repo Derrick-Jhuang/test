@@ -17,9 +17,9 @@ const $store = useStore.get();
 const $cookie = document.querySelector('.c-cookie');
 
 // policy
-(function policy() {
-  !$store.isPlicyShow && $cookie.classList.add('an-in');
-})();
+// (function policy() {
+//  !$store.isPlicyShow && $cookie.classList.add('an-in');
+// })();
 
 const closeCookie = () => {
   $cookie.classList.add('an-out');
