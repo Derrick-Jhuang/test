@@ -15,32 +15,63 @@
 </head>
 <body>
   <div class="l-wp-html">
-    <header class="hd is-desktop js-scroll">
-      <div class="top-block">
-        <div class="top-wp l-wp-1190">
-          <div class="logo"><a class="logo__pic" href="index.html"><img src="img/base/hd-logo.png"></a>
-            <div class="logo__bg"><img src="img/base/head-icons.png" alt="" srcset=""></div>
+    <header class="hd js-scroll">
+      <div class="is-desktop">
+        <div class="top-block">
+          <div class="top-wp l-wp-1190">
+            <div class="logo"><a class="logo__pic" href="index.html"><img src="img/base/hd-logo.png"></a>
+              <div class="logo__bg"><img src="img/base/head-icons.png" alt="" srcset=""></div>
+            </div>
+            <ul class="items u-clear-list">
+              <li class="items__li"><a class="c-btn-hd" href="login.html">
+                  <div class="c-btn__icon c-icon:vip"></div>
+                  <div class="c-btn__label">VIP LOGIN</div></a></li>
+              <li class="items__li"><a class="c-btn-hd" href="inquiry.html">
+                  <div class="c-btn__icon c-icon:inquiry-car"></div>
+                  <div class="c-btn__label">INQUIRY CAR</div></a></li>
+            </ul>
           </div>
-          <ul class="items u-clear-list">
-            <li class="items__li"><a class="c-btn-hd" href="login.html">
-                <div class="c-btn__icon c-icon:vip"></div>
-                <div class="c-btn__label">VIP LOGIN</div></a></li>
-            <li class="items__li"><a class="c-btn-hd" href="inquiry.html">
-                <div class="c-btn__icon c-icon:inquiry-car"></div>
-                <div class="c-btn__label">INQUIRY CAR</div></a></li>
-          </ul>
+        </div>
+        <div class="bottom-block">
+          <div class="bottom-wp l-wp-1190">
+            <nav class="menu u-clear-list">
+              <li class="menu__item"><a class="menu__link" href="about.html">ABOUT US</a></li>
+              <li class="menu__item"><a class="menu__link" href="products.html">PRODUCTS</a></li>
+              <li class="menu__item"><a class="menu__link" href="news.html">LATEST NEWS</a></li>
+              <li class="menu__item"><a class="menu__link" href="catalog.html">CATALOG DOWNLOAD</a></li>
+              <li class="menu__item"><a class="menu__link" href="contact.html">CONTACT US</a></li>
+            </nav>
+            <form class="search" action="" method="post">
+              <div class="c-fm-search">
+                <div class="c-fm__entry">
+                  <div class="c-fm__icon c-icon:search"></div>
+                  <input class="c-fm__input" type="text" id="search" name="search">
+                </div>
+                <button class="c-fm__btn u-clear-button" type="submit">Search</button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
-      <div class="bottom-block">
-        <div class="bottom-wp l-wp-1190">
-          <nav class="menu u-clear-list">
-            <li class="menu__item"><a class="menu__link" href="about.html">ABOUT US</a></li>
-            <li class="menu__item"><a class="menu__link" href="products.html">PRODUCTS</a></li>
-            <li class="menu__item"><a class="menu__link" href="news.html">LATEST NEWS</a></li>
-            <li class="menu__item"><a class="menu__link" href="catalog.html">CATALOG DOWNLOAD</a></li>
-            <li class="menu__item"><a class="menu__link" href="contact.html">CONTACT US</a></li>
-          </nav>
-          <form class="search" action="" method="post">
+      <div class="is-mobile">
+        <div class="block">
+          <div class="block__btn"><a class="c-btn c-btn--shopping-car" href="inquiry.html">
+              <div class="c-btn__icon c-icon:shopping-car-entity"></div></a></div><a class="block__logo" href="index.html"><img src="img/base/hd-logo.png"><span class="bg-left"></span><span class="bg-right"></span></a>
+          <div class="block__btn jc:end">
+            <div class="c-btn c-btn--toggle">
+              <div class="c-btn__icon"><span></span><span></span><span></span></div>
+            </div>
+          </div>
+        </div>
+        <menu class="menu">
+          <div class="menu__btn">
+            <div class="menu-close">
+              <div class="c-btn c-btn--menu-close">
+                <div class="c-btn__icon c-icon:fork"></div>
+              </div>
+            </div>
+          </div>
+          <form class="search menu__search" action="" method="post">
             <div class="c-fm-search">
               <div class="c-fm__entry">
                 <div class="c-fm__icon c-icon:search"></div>
@@ -49,11 +80,21 @@
               <button class="c-fm__btn u-clear-button" type="submit">Search</button>
             </div>
           </form>
-        </div>
+          <ul class="menu__list u-clear-list">
+            <li><a class="menu-link" href="index.html">HOME</a></li>
+            <li><a class="menu-link" href="about.html">ABOUT US</a></li>
+            <li><a class="menu-link" href="products.html">PRODUCTS</a></li>
+            <li><a class="menu-link" href="news.html">LATEST NEWS</a></li>
+            <li><a class="menu-link" href="catalog.html">CATALOG DOWNLOAD</a></li>
+            <li><a class="menu-link" href="contact.html">CONTACT US</a></li>
+          </ul>
+          <div class="menu__tools"><a class="c-btn c-btn--vip-login" href="login.html">
+              <div class="c-btn__icon c-icon:vip"></div></a></div>
+        </menu>
       </div>
     </header>
     <div class="l-wp-main">
-      <div class="wp l-wp-1210">
+      <div class="bk-bn l-wp-1210">
         <div class="c-bn c-bn--inside is-mask">
           <div class="bn-info">
             <div class="bn-info__title">CONTACT US</div>
@@ -61,6 +102,8 @@
           <div class="bn-pic"><img src="img/base/contact-bn.jpg" alt="" srcset="">
           </div>
         </div>
+      </div>
+      <div class="bk-map l-wp-1210">
         <div class="map">
           <div class="map__view">
             <div class="u-googlemap">
@@ -73,11 +116,21 @@
               <div class="info__text">If you are interested in the products provided by Renjyi, and you can't find the products and services you want on the website, please fill out the form below and send us your information, we will serve you as soon as possible, thank you!</div>
             </div>
             <ul class="list u-clear-list">
-              <li><a href="https://maps.app.goo.gl/Tv3sfNufvXP8SKEV6" target="_blank" rel="noopener noreferrer">No.1-1, Ln. 191, Side Rd., Wufeng Dist.,Taichung City 413, Taiwan (R.O.C.)</a></li>
-              <li><a href="tel:+886-4-23399706">+886-4-23399706</a></li>
-              <li>+886-4-23323136</li>
-              <li>Factory & Project Discusscion : <a href="mailto:renjyico1965@gmail.com">renjyico1965@gmail.com</a></li>
-              <li><a href="mailto:migolin@naver.com">migolin@naver.com</a></li>
+              <li>
+                <object data="img/base/icon/circle-location-dot.svg" type="image/svg+xml"></object><a href="https://maps.app.goo.gl/Tv3sfNufvXP8SKEV6" target="_blank" rel="noopener noreferrer">No.1-1, Ln. 191, Side Rd., Wufeng Dist.,Taichung City 413, Taiwan (R.O.C.)</a>
+              </li>
+              <li>
+                <object data="img/base/icon/circle-phone.svg" type="image/svg+xml"></object><a href="tel:+886-4-23399706">+886-4-23399706</a>
+              </li>
+              <li>
+                <object data="img/base/icon/circle-fax.svg" type="image/svg+xml"></object>+886-4-23323136
+              </li>
+              <li>
+                <object data="img/base/icon/circle-user.svg" type="image/svg+xml"></object>Factory & Project Discusscion : <a href="mailto:renjyico1965@gmail.com">renjyico1965@gmail.com</a>
+              </li>
+              <li>
+                <object data="img/base/icon/circle-mail.svg" type="image/svg+xml"></object><a href="mailto:migolin@naver.com">migolin@naver.com</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -138,7 +191,7 @@
       <div class="ft-wp l-wp-1330">
         <div class="logo"><img src="img/base/ft-logo.png" alt="" srcset=""></div>
         <nav class="menu u-clear-list">
-          <li class="menu__item"><a class="menu__link" href="index.html">Home</a></li>
+          <li class="menu__item"><a class="menu__link" href="index.html">HOME</a></li>
           <li class="menu__item"><a class="menu__link" href="about.html">ABOUT US</a></li>
           <li class="menu__item"><a class="menu__link" href="products.html">PRODUCTS</a></li>
           <li class="menu__item"><a class="menu__link" href="news.html">LATEST NEWS</a></li>
@@ -161,10 +214,10 @@
         </div>
       </div>
       <ul class="community u-clear-list">
-        <li class="community__item"><a class="c-icon:square-facebook-brands-solid community__link" href=""></a></li>
-        <li class="community__item"><a class="c-icon:instagram-brands-solid community__link" href=""></a></li>
-        <li class="community__item"><a class="c-icon:line-brands-solid community__link" href=""></a></li>
-        <li class="community__item"><a class="c-icon: community__link" href=""></a></li>
+        <li class="community__item"><a class="c-icon:facebook community__link" href=""></a></li>
+        <li class="community__item"><a class="c-icon:instagram community__link" href=""></a></li>
+        <li class="community__item"><a class="c-icon:line community__link" href=""></a></li>
+        <li class="community__item"><a class="c-icon:youtube community__link" href=""></a></li>
       </ul>
       <div class="copyright"> 2025 Renjyi Enterprise Co., Ltd. | Copyright ©</div>
       <div class="gotop-block js-scroll">

@@ -15,32 +15,63 @@
 </head>
 <body>
   <div class="l-wp-html">
-    <header class="hd is-desktop js-scroll">
-      <div class="top-block">
-        <div class="top-wp l-wp-1190">
-          <div class="logo"><a class="logo__pic" href="index.html"><img src="img/base/hd-logo.png"></a>
-            <div class="logo__bg"><img src="img/base/head-icons.png" alt="" srcset=""></div>
+    <header class="hd js-scroll">
+      <div class="is-desktop">
+        <div class="top-block">
+          <div class="top-wp l-wp-1190">
+            <div class="logo"><a class="logo__pic" href="index.html"><img src="img/base/hd-logo.png"></a>
+              <div class="logo__bg"><img src="img/base/head-icons.png" alt="" srcset=""></div>
+            </div>
+            <ul class="items u-clear-list">
+              <li class="items__li"><a class="c-btn-hd" href="login.html">
+                  <div class="c-btn__icon c-icon:vip"></div>
+                  <div class="c-btn__label">VIP LOGIN</div></a></li>
+              <li class="items__li"><a class="c-btn-hd" href="inquiry.html">
+                  <div class="c-btn__icon c-icon:inquiry-car"></div>
+                  <div class="c-btn__label">INQUIRY CAR</div></a></li>
+            </ul>
           </div>
-          <ul class="items u-clear-list">
-            <li class="items__li"><a class="c-btn-hd" href="login.html">
-                <div class="c-btn__icon c-icon:vip"></div>
-                <div class="c-btn__label">VIP LOGIN</div></a></li>
-            <li class="items__li"><a class="c-btn-hd" href="inquiry.html">
-                <div class="c-btn__icon c-icon:inquiry-car"></div>
-                <div class="c-btn__label">INQUIRY CAR</div></a></li>
-          </ul>
+        </div>
+        <div class="bottom-block">
+          <div class="bottom-wp l-wp-1190">
+            <nav class="menu u-clear-list">
+              <li class="menu__item"><a class="menu__link" href="about.html">ABOUT US</a></li>
+              <li class="menu__item"><a class="menu__link" href="products.html">PRODUCTS</a></li>
+              <li class="menu__item"><a class="menu__link" href="news.html">LATEST NEWS</a></li>
+              <li class="menu__item"><a class="menu__link" href="catalog.html">CATALOG DOWNLOAD</a></li>
+              <li class="menu__item"><a class="menu__link" href="contact.html">CONTACT US</a></li>
+            </nav>
+            <form class="search" action="" method="post">
+              <div class="c-fm-search">
+                <div class="c-fm__entry">
+                  <div class="c-fm__icon c-icon:search"></div>
+                  <input class="c-fm__input" type="text" id="search" name="search">
+                </div>
+                <button class="c-fm__btn u-clear-button" type="submit">Search</button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
-      <div class="bottom-block">
-        <div class="bottom-wp l-wp-1190">
-          <nav class="menu u-clear-list">
-            <li class="menu__item"><a class="menu__link" href="about.html">ABOUT US</a></li>
-            <li class="menu__item"><a class="menu__link" href="products.html">PRODUCTS</a></li>
-            <li class="menu__item"><a class="menu__link" href="news.html">LATEST NEWS</a></li>
-            <li class="menu__item"><a class="menu__link" href="catalog.html">CATALOG DOWNLOAD</a></li>
-            <li class="menu__item"><a class="menu__link" href="contact.html">CONTACT US</a></li>
-          </nav>
-          <form class="search" action="" method="post">
+      <div class="is-mobile">
+        <div class="block">
+          <div class="block__btn"><a class="c-btn c-btn--shopping-car" href="inquiry.html">
+              <div class="c-btn__icon c-icon:shopping-car-entity"></div></a></div><a class="block__logo" href="index.html"><img src="img/base/hd-logo.png"><span class="bg-left"></span><span class="bg-right"></span></a>
+          <div class="block__btn jc:end">
+            <div class="c-btn c-btn--toggle">
+              <div class="c-btn__icon"><span></span><span></span><span></span></div>
+            </div>
+          </div>
+        </div>
+        <menu class="menu">
+          <div class="menu__btn">
+            <div class="menu-close">
+              <div class="c-btn c-btn--menu-close">
+                <div class="c-btn__icon c-icon:fork"></div>
+              </div>
+            </div>
+          </div>
+          <form class="search menu__search" action="" method="post">
             <div class="c-fm-search">
               <div class="c-fm__entry">
                 <div class="c-fm__icon c-icon:search"></div>
@@ -49,7 +80,17 @@
               <button class="c-fm__btn u-clear-button" type="submit">Search</button>
             </div>
           </form>
-        </div>
+          <ul class="menu__list u-clear-list">
+            <li><a class="menu-link" href="index.html">HOME</a></li>
+            <li><a class="menu-link" href="about.html">ABOUT US</a></li>
+            <li><a class="menu-link" href="products.html">PRODUCTS</a></li>
+            <li><a class="menu-link" href="news.html">LATEST NEWS</a></li>
+            <li><a class="menu-link" href="catalog.html">CATALOG DOWNLOAD</a></li>
+            <li><a class="menu-link" href="contact.html">CONTACT US</a></li>
+          </ul>
+          <div class="menu__tools"><a class="c-btn c-btn--vip-login" href="login.html">
+              <div class="c-btn__icon c-icon:vip"></div></a></div>
+        </menu>
       </div>
     </header>
     <div class="l-wp-main">
@@ -67,20 +108,20 @@
         <div class="swiper-container c-bn__view">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <div class="c-bn__pic u-imgfit-contain"><img src="img/base/idx-bn.png"></div>
+              <div class="c-bn__pic u-imgfit-contain"><img class="is-desktop" src="img/base/idx-bn.png"><img class="is-mobile" src="img/base/idx-bn-mobile.png"></div>
             </div>
             <div class="swiper-slide">
-              <div class="c-bn__pic u-imgfit-contain"><img src="img/base/idx-bn-02.png"></div>
+              <div class="c-bn__pic u-imgfit-contain"><img class="is-desktop" src="img/base/idx-bn-02.png"><img class="is-mobile" src="img/base/idx-bn-02.png"></div>
             </div>
             <div class="swiper-slide">
-              <div class="c-bn__pic u-imgfit-contain"><img src="img/base/idx-bn-03.png"></div>
+              <div class="c-bn__pic u-imgfit-contain"><img class="is-desktop" src="img/base/idx-bn-03.png"><img class="is-mobile" src="img/base/idx-bn-03.png"></div>
             </div>
           </div>
         </div>
         <div class="c-bn__bg"></div>
       </div>
       <div class="abt">
-        <div class="l-wp-1310">
+        <div class="l-wp l-wp-1310">
           <div class="pic">
             <div class="pic__info"> 
               <div class="subtitle">
@@ -103,7 +144,7 @@
                   <div class="crd-text">SpreadWell</div>
                   <div class="btn-group"><a class="c-btn-idx-abt" href="">
                       <div class="c-btn__label">VIEW</div>
-                      <div class="c-btn__icon"></div></a></div>
+                      <div class="c-btn__icon"><span class="c-icon:angles-right"></span></div></a></div>
                 </div>
                 <div class="crd-pic u-imgfit-cover"><img src="img/base/idx-crd-pic01.jpg" alt=""></div>
               </div>
@@ -115,7 +156,7 @@
                   <div class="crd-text">Sign in for more hidden products<br>            Huge range of sewing machine feet.<br>            Home, Industrial, Overlock,Coverstitch and more<br>            Please sign in as a V.I.P.</div>
                   <div class="btn-group"><a class="c-btn-idx-abt" href="">
                       <div class="c-btn__label">VIEW</div>
-                      <div class="c-btn__icon"></div></a></div>
+                      <div class="c-btn__icon"><span class="c-icon:angles-right"></span></div></a></div>
                 </div>
                 <div class="crd-pic u-imgfit-cover"><img src="img/base/idx-crd-pic02.jpg" alt=""></div>
               </div>
@@ -128,7 +169,7 @@
           <div class="box">
             <div class="c-headline is-red">
               <div class="c-headline__label">
-                <object class="label-icon" data="img/base/headline-icon.svg" type="image/svg+xml"></object><span class="label-color">RENJYI</span><span>FACTORY PRODUCTS</span>
+                <object class="label-icon" data="img/base/headline-icon.svg" type="image/svg+xml"></object><span><span class="label-color">RENJYI</span>FACTORY PRODUCTS</span>
               </div>
               <div class="c-headline__btn"><a class="c-btn-base is-red" href="">
                   <div class="c-btn__label">more</div>
@@ -138,28 +179,35 @@
               <div class="l-wp">
                 <div class="swiper-container">
                   <div class="swiper-wrapper">
-                    <div class="swiper-slide"><a class="c-crd-idx-pro is-red" href="">
+                    <div class="swiper-slide"><a class="c-crd-idx-pro is-red" href="products-detail.html">
                         <div class="crd-pic u-imgfit-contain" data-imgfit="240/240"><img src="img/base/idx-pro-pic1-1.png">
                         </div>
                         <div class="crd-info">
                           <div class="crd-number">RJ-7301NG</div>
                           <div class="crd-label">ALL PURPOSE FOOT</div>
                         </div></a></div>
-                    <div class="swiper-slide"><a class="c-crd-idx-pro is-red" href="">
+                    <div class="swiper-slide"><a class="c-crd-idx-pro is-red" href="products-detail.html">
                         <div class="crd-pic u-imgfit-contain" data-imgfit="240/240"><img src="img/base/idx-pro-pic1-2.png">
                         </div>
                         <div class="crd-info">
                           <div class="crd-number">820255096</div>
                           <div class="crd-label">ADJUSTABLE RUFFLER ATTACHMENT</div>
                         </div></a></div>
-                    <div class="swiper-slide"><a class="c-crd-idx-pro is-red" href="">
+                    <div class="swiper-slide"><a class="c-crd-idx-pro is-red" href="products-detail.html">
                         <div class="crd-pic u-imgfit-contain" data-imgfit="240/240"><img src="img/base/idx-pro-pic1-3.png">
                         </div>
                         <div class="crd-info">
                           <div class="crd-number">821164096</div>
                           <div class="crd-label">FREE HAND QUILTING RULER FOOT</div>
                         </div></a></div>
-                    <div class="swiper-slide"><a class="c-crd-idx-pro is-red" href="">
+                    <div class="swiper-slide"><a class="c-crd-idx-pro is-red" href="products-detail.html">
+                        <div class="crd-pic u-imgfit-contain" data-imgfit="240/240"><img src="img/base/idx-pro-pic1-4.png">
+                        </div>
+                        <div class="crd-info">
+                          <div class="crd-number">RJ-7301NG</div>
+                          <div class="crd-label">ALL PURPOSE FOOT</div>
+                        </div></a></div>
+                    <div class="swiper-slide"><a class="c-crd-idx-pro is-red" href="products-detail.html">
                         <div class="crd-pic u-imgfit-contain" data-imgfit="240/240"><img src="img/base/idx-pro-pic1-4.png">
                         </div>
                         <div class="crd-info">
@@ -168,13 +216,17 @@
                         </div></a></div>
                   </div>
                 </div>
+                <div class="btn-group">
+                  <div class="c-btn:arrow-left c-icon:arrow-left js-btn-prev"></div>
+                  <div class="c-btn:arrow-right c-icon:arrow-right js-btn-next"></div>
+                </div>
               </div>
             </div>
           </div>
           <div class="box">
             <div class="c-headline is-blue">
               <div class="c-headline__label">
-                <object class="label-icon" data="img/base/headline-icon.svg" type="image/svg+xml"></object><span class="label-color">UNIQUE</span><span>CHOSEN | TAIWAN ONLY</span>
+                <object class="label-icon" data="img/base/headline-icon.svg" type="image/svg+xml"></object><span><span class="label-color">UNIQUE</span>CHOSEN | TAIWAN ONLY</span>
               </div>
               <div class="c-headline__btn"><a class="c-btn-base is-blue" href="">
                   <div class="c-btn__label">more</div>
@@ -184,28 +236,35 @@
               <div class="l-wp">
                 <div class="swiper-container">
                   <div class="swiper-wrapper">
-                    <div class="swiper-slide"><a class="c-crd-idx-pro is-blue" href="">
+                    <div class="swiper-slide"><a class="c-crd-idx-pro is-blue" href="products-detail.html">
                         <div class="crd-pic u-imgfit-contain" data-imgfit="240/240"><img src="img/base/idx-pro-pic1-2.png">
                         </div>
                         <div class="crd-info">
                           <div class="crd-number">821164096</div>
                           <div class="crd-label">ADJUSTABLE RUFFLER ATTACHMENT</div>
                         </div></a></div>
-                    <div class="swiper-slide"><a class="c-crd-idx-pro is-blue" href="">
+                    <div class="swiper-slide"><a class="c-crd-idx-pro is-blue" href="products-detail.html">
                         <div class="crd-pic u-imgfit-contain" data-imgfit="240/240"><img src="img/base/idx-pro-pic1-1.png">
                         </div>
                         <div class="crd-info">
                           <div class="crd-number">RJ-7301NG</div>
                           <div class="crd-label">ALL PURPOSE FOOT</div>
                         </div></a></div>
-                    <div class="swiper-slide"><a class="c-crd-idx-pro is-blue" href="">
+                    <div class="swiper-slide"><a class="c-crd-idx-pro is-blue" href="products-detail.html">
                         <div class="crd-pic u-imgfit-contain" data-imgfit="240/240"><img src="img/base/idx-pro-pic1-1.png">
                         </div>
                         <div class="crd-info">
                           <div class="crd-number">RJ-7301NG</div>
                           <div class="crd-label">ALL PURPOSE FOOT</div>
                         </div></a></div>
-                    <div class="swiper-slide"><a class="c-crd-idx-pro is-blue" href="">
+                    <div class="swiper-slide"><a class="c-crd-idx-pro is-blue" href="products-detail.html">
+                        <div class="crd-pic u-imgfit-contain" data-imgfit="240/240"><img src="img/base/idx-pro-pic1-3.png">
+                        </div>
+                        <div class="crd-info">
+                          <div class="crd-number">821164096</div>
+                          <div class="crd-label">FREE HAND QUILTING RULER FOOT</div>
+                        </div></a></div>
+                    <div class="swiper-slide"><a class="c-crd-idx-pro is-blue" href="products-detail.html">
                         <div class="crd-pic u-imgfit-contain" data-imgfit="240/240"><img src="img/base/idx-pro-pic1-3.png">
                         </div>
                         <div class="crd-info">
@@ -213,6 +272,10 @@
                           <div class="crd-label">FREE HAND QUILTING RULER FOOT</div>
                         </div></a></div>
                   </div>
+                </div>
+                <div class="btn-group">
+                  <div class="c-btn:arrow-left c-icon:arrow-left js-btn-prev"></div>
+                  <div class="c-btn:arrow-right c-icon:arrow-right js-btn-next"></div>
                 </div>
               </div>
             </div>
@@ -231,7 +294,7 @@
                 <li class="el-list__item">Export Department : <a href="mailto:migolin@naver.com">migolin@naver.com</a></li>
               </ul>
             </div>
-            <div class="view__bg u-imgfit-cover"><img src="img/base/idx-con-bg.jpg" alt="" srcset=""></div>
+            <div class="view__bg"></div>
           </div>
         </div>
       </div>
@@ -240,7 +303,7 @@
       <div class="ft-wp l-wp-1330">
         <div class="logo"><img src="img/base/ft-logo.png" alt="" srcset=""></div>
         <nav class="menu u-clear-list">
-          <li class="menu__item"><a class="menu__link" href="index.html">Home</a></li>
+          <li class="menu__item"><a class="menu__link" href="index.html">HOME</a></li>
           <li class="menu__item"><a class="menu__link" href="about.html">ABOUT US</a></li>
           <li class="menu__item"><a class="menu__link" href="products.html">PRODUCTS</a></li>
           <li class="menu__item"><a class="menu__link" href="news.html">LATEST NEWS</a></li>
@@ -263,10 +326,10 @@
         </div>
       </div>
       <ul class="community u-clear-list">
-        <li class="community__item"><a class="c-icon:square-facebook-brands-solid community__link" href=""></a></li>
-        <li class="community__item"><a class="c-icon:instagram-brands-solid community__link" href=""></a></li>
-        <li class="community__item"><a class="c-icon:line-brands-solid community__link" href=""></a></li>
-        <li class="community__item"><a class="c-icon: community__link" href=""></a></li>
+        <li class="community__item"><a class="c-icon:facebook community__link" href=""></a></li>
+        <li class="community__item"><a class="c-icon:instagram community__link" href=""></a></li>
+        <li class="community__item"><a class="c-icon:line community__link" href=""></a></li>
+        <li class="community__item"><a class="c-icon:youtube community__link" href=""></a></li>
       </ul>
       <div class="copyright"> 2025 Renjyi Enterprise Co., Ltd. | Copyright ©</div>
       <div class="gotop-block js-scroll">
@@ -298,6 +361,26 @@
           navigation: {
             nextEl: `.js-swiper-idx-pro-${i} .js-btn-next`,
             prevEl: `.js-swiper-idx-pro-${i} .js-btn-prev`
+          },
+          breakpoints: {
+            1920: {
+              slidesPerView: 4,
+              spaceBetween: 42,
+            },
+            1100: {
+              slidesPerView: 3,
+              spaceBetween: 25,
+            },
+            800: {
+              slidesPerView: 2,
+              slidesPerColumn: 3,
+              spaceBetween: 15,
+            },
+            500: {
+              slidesPerView: 1,
+              slidesPerColumn: 3,
+              spaceBetween: 15,
+            },
           },
         })
       }

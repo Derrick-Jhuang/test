@@ -15,32 +15,63 @@
 </head>
 <body>
   <div class="l-wp-html">
-    <header class="hd is-desktop js-scroll">
-      <div class="top-block">
-        <div class="top-wp l-wp-1190">
-          <div class="logo"><a class="logo__pic" href="index.html"><img src="img/base/hd-logo.png"></a>
-            <div class="logo__bg"><img src="img/base/head-icons.png" alt="" srcset=""></div>
+    <header class="hd js-scroll">
+      <div class="is-desktop">
+        <div class="top-block">
+          <div class="top-wp l-wp-1190">
+            <div class="logo"><a class="logo__pic" href="index.html"><img src="img/base/hd-logo.png"></a>
+              <div class="logo__bg"><img src="img/base/head-icons.png" alt="" srcset=""></div>
+            </div>
+            <ul class="items u-clear-list">
+              <li class="items__li"><a class="c-btn-hd" href="login.html">
+                  <div class="c-btn__icon c-icon:vip"></div>
+                  <div class="c-btn__label">VIP LOGIN</div></a></li>
+              <li class="items__li"><a class="c-btn-hd" href="inquiry.html">
+                  <div class="c-btn__icon c-icon:inquiry-car"></div>
+                  <div class="c-btn__label">INQUIRY CAR</div></a></li>
+            </ul>
           </div>
-          <ul class="items u-clear-list">
-            <li class="items__li"><a class="c-btn-hd" href="login.html">
-                <div class="c-btn__icon c-icon:vip"></div>
-                <div class="c-btn__label">VIP LOGIN</div></a></li>
-            <li class="items__li"><a class="c-btn-hd" href="inquiry.html">
-                <div class="c-btn__icon c-icon:inquiry-car"></div>
-                <div class="c-btn__label">INQUIRY CAR</div></a></li>
-          </ul>
+        </div>
+        <div class="bottom-block">
+          <div class="bottom-wp l-wp-1190">
+            <nav class="menu u-clear-list">
+              <li class="menu__item"><a class="menu__link" href="about.html">ABOUT US</a></li>
+              <li class="menu__item"><a class="menu__link" href="products.html">PRODUCTS</a></li>
+              <li class="menu__item"><a class="menu__link" href="news.html">LATEST NEWS</a></li>
+              <li class="menu__item"><a class="menu__link" href="catalog.html">CATALOG DOWNLOAD</a></li>
+              <li class="menu__item"><a class="menu__link" href="contact.html">CONTACT US</a></li>
+            </nav>
+            <form class="search" action="" method="post">
+              <div class="c-fm-search">
+                <div class="c-fm__entry">
+                  <div class="c-fm__icon c-icon:search"></div>
+                  <input class="c-fm__input" type="text" id="search" name="search">
+                </div>
+                <button class="c-fm__btn u-clear-button" type="submit">Search</button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
-      <div class="bottom-block">
-        <div class="bottom-wp l-wp-1190">
-          <nav class="menu u-clear-list">
-            <li class="menu__item"><a class="menu__link" href="about.html">ABOUT US</a></li>
-            <li class="menu__item"><a class="menu__link" href="products.html">PRODUCTS</a></li>
-            <li class="menu__item"><a class="menu__link" href="news.html">LATEST NEWS</a></li>
-            <li class="menu__item"><a class="menu__link" href="catalog.html">CATALOG DOWNLOAD</a></li>
-            <li class="menu__item"><a class="menu__link" href="contact.html">CONTACT US</a></li>
-          </nav>
-          <form class="search" action="" method="post">
+      <div class="is-mobile">
+        <div class="block">
+          <div class="block__btn"><a class="c-btn c-btn--shopping-car" href="inquiry.html">
+              <div class="c-btn__icon c-icon:shopping-car-entity"></div></a></div><a class="block__logo" href="index.html"><img src="img/base/hd-logo.png"><span class="bg-left"></span><span class="bg-right"></span></a>
+          <div class="block__btn jc:end">
+            <div class="c-btn c-btn--toggle">
+              <div class="c-btn__icon"><span></span><span></span><span></span></div>
+            </div>
+          </div>
+        </div>
+        <menu class="menu">
+          <div class="menu__btn">
+            <div class="menu-close">
+              <div class="c-btn c-btn--menu-close">
+                <div class="c-btn__icon c-icon:fork"></div>
+              </div>
+            </div>
+          </div>
+          <form class="search menu__search" action="" method="post">
             <div class="c-fm-search">
               <div class="c-fm__entry">
                 <div class="c-fm__icon c-icon:search"></div>
@@ -49,15 +80,29 @@
               <button class="c-fm__btn u-clear-button" type="submit">Search</button>
             </div>
           </form>
-        </div>
+          <ul class="menu__list u-clear-list">
+            <li><a class="menu-link" href="index.html">HOME</a></li>
+            <li><a class="menu-link" href="about.html">ABOUT US</a></li>
+            <li><a class="menu-link" href="products.html">PRODUCTS</a></li>
+            <li><a class="menu-link" href="news.html">LATEST NEWS</a></li>
+            <li><a class="menu-link" href="catalog.html">CATALOG DOWNLOAD</a></li>
+            <li><a class="menu-link" href="contact.html">CONTACT US</a></li>
+          </ul>
+          <div class="menu__tools"><a class="c-btn c-btn--vip-login" href="login.html">
+              <div class="c-btn__icon c-icon:vip"></div></a></div>
+        </menu>
       </div>
     </header>
     <div class="l-wp-main">
-      <div class="l-wp-1196">
+      <div class="c-bn c-bn--inside is-show-mobile">
+        <div class="bn-pic"><img src="img/base/inquiry-bn.png" alt="" srcset="">
+        </div>
+      </div>
+      <div class="l-wp l-wp-1196">
         <form class="c-fm">
           <div class="c-fm__list">
             <div class="c-title c-title--base">
-              <div class="c-title__icon c-icon:test"></div>
+              <div class="c-title__icon"><span class="c-icon:shopping-car-entity"></span></div>
               <div class="c-title__label">INQUIRY CAR | Commodity</div>
             </div>
             <ul class="list u-clear-list">
@@ -71,6 +116,7 @@
                     </div>
                     <div class="btn-group">
                       <button class="c-btn c-btn--rectangle">
+                        <div class="c-btn__icon c-icon:fork"></div>
                       </button>
                     </div>
                   </div>
@@ -86,6 +132,7 @@
                     </div>
                     <div class="btn-group">
                       <button class="c-btn c-btn--rectangle">
+                        <div class="c-btn__icon c-icon:fork"></div>
                       </button>
                     </div>
                   </div>
@@ -101,6 +148,7 @@
                     </div>
                     <div class="btn-group">
                       <button class="c-btn c-btn--rectangle">
+                        <div class="c-btn__icon c-icon:fork"></div>
                       </button>
                     </div>
                   </div>
@@ -110,7 +158,7 @@
           </div>
           <div class="c-fm__inquiry">
             <div class="c-title c-title--base">
-              <div class="c-title__icon c-icon:test"></div>
+              <div class="c-title__icon"><span class="c-icon:vip-entity"></span></div>
               <div class="c-title__label">INQUIRY INFORMATION </div>
             </div>
             <div class="inquiry">
@@ -173,7 +221,7 @@
       <div class="ft-wp l-wp-1330">
         <div class="logo"><img src="img/base/ft-logo.png" alt="" srcset=""></div>
         <nav class="menu u-clear-list">
-          <li class="menu__item"><a class="menu__link" href="index.html">Home</a></li>
+          <li class="menu__item"><a class="menu__link" href="index.html">HOME</a></li>
           <li class="menu__item"><a class="menu__link" href="about.html">ABOUT US</a></li>
           <li class="menu__item"><a class="menu__link" href="products.html">PRODUCTS</a></li>
           <li class="menu__item"><a class="menu__link" href="news.html">LATEST NEWS</a></li>
@@ -196,10 +244,10 @@
         </div>
       </div>
       <ul class="community u-clear-list">
-        <li class="community__item"><a class="c-icon:square-facebook-brands-solid community__link" href=""></a></li>
-        <li class="community__item"><a class="c-icon:instagram-brands-solid community__link" href=""></a></li>
-        <li class="community__item"><a class="c-icon:line-brands-solid community__link" href=""></a></li>
-        <li class="community__item"><a class="c-icon: community__link" href=""></a></li>
+        <li class="community__item"><a class="c-icon:facebook community__link" href=""></a></li>
+        <li class="community__item"><a class="c-icon:instagram community__link" href=""></a></li>
+        <li class="community__item"><a class="c-icon:line community__link" href=""></a></li>
+        <li class="community__item"><a class="c-icon:youtube community__link" href=""></a></li>
       </ul>
       <div class="copyright"> 2025 Renjyi Enterprise Co., Ltd. | Copyright ©</div>
       <div class="gotop-block js-scroll">

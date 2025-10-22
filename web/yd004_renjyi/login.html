@@ -15,32 +15,63 @@
 </head>
 <body>
   <div class="l-wp-html">
-    <header class="hd is-desktop js-scroll">
-      <div class="top-block">
-        <div class="top-wp l-wp-1190">
-          <div class="logo"><a class="logo__pic" href="index.html"><img src="img/base/hd-logo.png"></a>
-            <div class="logo__bg"><img src="img/base/head-icons.png" alt="" srcset=""></div>
+    <header class="hd js-scroll">
+      <div class="is-desktop">
+        <div class="top-block">
+          <div class="top-wp l-wp-1190">
+            <div class="logo"><a class="logo__pic" href="index.html"><img src="img/base/hd-logo.png"></a>
+              <div class="logo__bg"><img src="img/base/head-icons.png" alt="" srcset=""></div>
+            </div>
+            <ul class="items u-clear-list">
+              <li class="items__li"><a class="c-btn-hd" href="login.html">
+                  <div class="c-btn__icon c-icon:vip"></div>
+                  <div class="c-btn__label">VIP LOGIN</div></a></li>
+              <li class="items__li"><a class="c-btn-hd" href="inquiry.html">
+                  <div class="c-btn__icon c-icon:inquiry-car"></div>
+                  <div class="c-btn__label">INQUIRY CAR</div></a></li>
+            </ul>
           </div>
-          <ul class="items u-clear-list">
-            <li class="items__li"><a class="c-btn-hd" href="login.html">
-                <div class="c-btn__icon c-icon:vip"></div>
-                <div class="c-btn__label">VIP LOGIN</div></a></li>
-            <li class="items__li"><a class="c-btn-hd" href="inquiry.html">
-                <div class="c-btn__icon c-icon:inquiry-car"></div>
-                <div class="c-btn__label">INQUIRY CAR</div></a></li>
-          </ul>
+        </div>
+        <div class="bottom-block">
+          <div class="bottom-wp l-wp-1190">
+            <nav class="menu u-clear-list">
+              <li class="menu__item"><a class="menu__link" href="about.html">ABOUT US</a></li>
+              <li class="menu__item"><a class="menu__link" href="products.html">PRODUCTS</a></li>
+              <li class="menu__item"><a class="menu__link" href="news.html">LATEST NEWS</a></li>
+              <li class="menu__item"><a class="menu__link" href="catalog.html">CATALOG DOWNLOAD</a></li>
+              <li class="menu__item"><a class="menu__link" href="contact.html">CONTACT US</a></li>
+            </nav>
+            <form class="search" action="" method="post">
+              <div class="c-fm-search">
+                <div class="c-fm__entry">
+                  <div class="c-fm__icon c-icon:search"></div>
+                  <input class="c-fm__input" type="text" id="search" name="search">
+                </div>
+                <button class="c-fm__btn u-clear-button" type="submit">Search</button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
-      <div class="bottom-block">
-        <div class="bottom-wp l-wp-1190">
-          <nav class="menu u-clear-list">
-            <li class="menu__item"><a class="menu__link" href="about.html">ABOUT US</a></li>
-            <li class="menu__item"><a class="menu__link" href="products.html">PRODUCTS</a></li>
-            <li class="menu__item"><a class="menu__link" href="news.html">LATEST NEWS</a></li>
-            <li class="menu__item"><a class="menu__link" href="catalog.html">CATALOG DOWNLOAD</a></li>
-            <li class="menu__item"><a class="menu__link" href="contact.html">CONTACT US</a></li>
-          </nav>
-          <form class="search" action="" method="post">
+      <div class="is-mobile">
+        <div class="block">
+          <div class="block__btn"><a class="c-btn c-btn--shopping-car" href="inquiry.html">
+              <div class="c-btn__icon c-icon:shopping-car-entity"></div></a></div><a class="block__logo" href="index.html"><img src="img/base/hd-logo.png"><span class="bg-left"></span><span class="bg-right"></span></a>
+          <div class="block__btn jc:end">
+            <div class="c-btn c-btn--toggle">
+              <div class="c-btn__icon"><span></span><span></span><span></span></div>
+            </div>
+          </div>
+        </div>
+        <menu class="menu">
+          <div class="menu__btn">
+            <div class="menu-close">
+              <div class="c-btn c-btn--menu-close">
+                <div class="c-btn__icon c-icon:fork"></div>
+              </div>
+            </div>
+          </div>
+          <form class="search menu__search" action="" method="post">
             <div class="c-fm-search">
               <div class="c-fm__entry">
                 <div class="c-fm__icon c-icon:search"></div>
@@ -49,11 +80,21 @@
               <button class="c-fm__btn u-clear-button" type="submit">Search</button>
             </div>
           </form>
-        </div>
+          <ul class="menu__list u-clear-list">
+            <li><a class="menu-link" href="index.html">HOME</a></li>
+            <li><a class="menu-link" href="about.html">ABOUT US</a></li>
+            <li><a class="menu-link" href="products.html">PRODUCTS</a></li>
+            <li><a class="menu-link" href="news.html">LATEST NEWS</a></li>
+            <li><a class="menu-link" href="catalog.html">CATALOG DOWNLOAD</a></li>
+            <li><a class="menu-link" href="contact.html">CONTACT US</a></li>
+          </ul>
+          <div class="menu__tools"><a class="c-btn c-btn--vip-login" href="login.html">
+              <div class="c-btn__icon c-icon:vip"></div></a></div>
+        </menu>
       </div>
     </header>
     <div class="l-wp-main">
-      <div class="l-wp-1200">
+      <div class="bn-wp l-wp-1200">
         <div class="c-bn c-bn--inside is-mask">
           <div class="bn-info">
             <div class="bn-info__title">VIP  LOGIN</div>
@@ -61,6 +102,8 @@
           <div class="bn-pic"><img src="img/base/login-bn.jpg" alt="" srcset="">
           </div>
         </div>
+      </div>
+      <div class="info-wp l-wp-1200">
         <div class="info">
           <p>CAUTION of PASSWORD : <br>DO NOT USE YOUR ORIGINAL ONE WHEN YOU SIGN IN<br>THE WAY OF E-MAIL LOG IN <br>if just we will send the ''WHATS NEW'' to you.<br>AND confirm that you are real person in the world!!</p>
           <p>Log in ID is your email address NOT the person's name.<br>Q: Why I have to sign in RENJYI's website?<br>A: You can see more hidden products after you sign in. <br>Q: If there have any benefit after I sign in RENJYI's website?<br>A: Of couse, in 2020, we will roll out the online magazine for our agent and consumer.<br>Please look forward this function.</p>
@@ -68,7 +111,7 @@
         <div class="form">
           <div class="form__member">
             <div class="form-title">
-              <div class="form-title__icon"></div>
+              <div class="form-title__icon"><span class="c-icon:vip-entity"></span></div>
               <div class="form-title__label">VIP member login</div>
             </div>
             <form class="c-fm c-fm--login" action="">
@@ -91,7 +134,7 @@
               <div class="row is-submit">
                 <div class="btn-group col-12">
                   <button class="c-btn c-btn--rectangle is-login" type="submit">
-                    <div class="c-btn__icon c-icon:test"></div>
+                    <div class="c-btn__icon c-icon:vip"></div>
                     <div class="c-btn__label">Login</div>
                   </button>
                 </div>
@@ -100,7 +143,7 @@
           </div>
           <div class="form__join">
             <div class="form-title">
-              <div class="form-title__icon"></div>
+              <div class="form-title__icon"><span class="c-icon:vip-entity"></span></div>
               <div class="form-title__label">Join as VIP</div>
             </div>
             <form class="c-fm c-fm--join" action="">
@@ -184,7 +227,7 @@
       <div class="ft-wp l-wp-1330">
         <div class="logo"><img src="img/base/ft-logo.png" alt="" srcset=""></div>
         <nav class="menu u-clear-list">
-          <li class="menu__item"><a class="menu__link" href="index.html">Home</a></li>
+          <li class="menu__item"><a class="menu__link" href="index.html">HOME</a></li>
           <li class="menu__item"><a class="menu__link" href="about.html">ABOUT US</a></li>
           <li class="menu__item"><a class="menu__link" href="products.html">PRODUCTS</a></li>
           <li class="menu__item"><a class="menu__link" href="news.html">LATEST NEWS</a></li>
@@ -207,10 +250,10 @@
         </div>
       </div>
       <ul class="community u-clear-list">
-        <li class="community__item"><a class="c-icon:square-facebook-brands-solid community__link" href=""></a></li>
-        <li class="community__item"><a class="c-icon:instagram-brands-solid community__link" href=""></a></li>
-        <li class="community__item"><a class="c-icon:line-brands-solid community__link" href=""></a></li>
-        <li class="community__item"><a class="c-icon: community__link" href=""></a></li>
+        <li class="community__item"><a class="c-icon:facebook community__link" href=""></a></li>
+        <li class="community__item"><a class="c-icon:instagram community__link" href=""></a></li>
+        <li class="community__item"><a class="c-icon:line community__link" href=""></a></li>
+        <li class="community__item"><a class="c-icon:youtube community__link" href=""></a></li>
       </ul>
       <div class="copyright"> 2025 Renjyi Enterprise Co., Ltd. | Copyright ©</div>
       <div class="gotop-block js-scroll">

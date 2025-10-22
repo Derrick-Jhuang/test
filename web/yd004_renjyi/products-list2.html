@@ -15,32 +15,63 @@
 </head>
 <body>
   <div class="l-wp-html">
-    <header class="hd is-desktop js-scroll">
-      <div class="top-block">
-        <div class="top-wp l-wp-1190">
-          <div class="logo"><a class="logo__pic" href="index.html"><img src="img/base/hd-logo.png"></a>
-            <div class="logo__bg"><img src="img/base/head-icons.png" alt="" srcset=""></div>
+    <header class="hd js-scroll">
+      <div class="is-desktop">
+        <div class="top-block">
+          <div class="top-wp l-wp-1190">
+            <div class="logo"><a class="logo__pic" href="index.html"><img src="img/base/hd-logo.png"></a>
+              <div class="logo__bg"><img src="img/base/head-icons.png" alt="" srcset=""></div>
+            </div>
+            <ul class="items u-clear-list">
+              <li class="items__li"><a class="c-btn-hd" href="login.html">
+                  <div class="c-btn__icon c-icon:vip"></div>
+                  <div class="c-btn__label">VIP LOGIN</div></a></li>
+              <li class="items__li"><a class="c-btn-hd" href="inquiry.html">
+                  <div class="c-btn__icon c-icon:inquiry-car"></div>
+                  <div class="c-btn__label">INQUIRY CAR</div></a></li>
+            </ul>
           </div>
-          <ul class="items u-clear-list">
-            <li class="items__li"><a class="c-btn-hd" href="login.html">
-                <div class="c-btn__icon c-icon:vip"></div>
-                <div class="c-btn__label">VIP LOGIN</div></a></li>
-            <li class="items__li"><a class="c-btn-hd" href="inquiry.html">
-                <div class="c-btn__icon c-icon:inquiry-car"></div>
-                <div class="c-btn__label">INQUIRY CAR</div></a></li>
-          </ul>
+        </div>
+        <div class="bottom-block">
+          <div class="bottom-wp l-wp-1190">
+            <nav class="menu u-clear-list">
+              <li class="menu__item"><a class="menu__link" href="about.html">ABOUT US</a></li>
+              <li class="menu__item"><a class="menu__link" href="products.html">PRODUCTS</a></li>
+              <li class="menu__item"><a class="menu__link" href="news.html">LATEST NEWS</a></li>
+              <li class="menu__item"><a class="menu__link" href="catalog.html">CATALOG DOWNLOAD</a></li>
+              <li class="menu__item"><a class="menu__link" href="contact.html">CONTACT US</a></li>
+            </nav>
+            <form class="search" action="" method="post">
+              <div class="c-fm-search">
+                <div class="c-fm__entry">
+                  <div class="c-fm__icon c-icon:search"></div>
+                  <input class="c-fm__input" type="text" id="search" name="search">
+                </div>
+                <button class="c-fm__btn u-clear-button" type="submit">Search</button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
-      <div class="bottom-block">
-        <div class="bottom-wp l-wp-1190">
-          <nav class="menu u-clear-list">
-            <li class="menu__item"><a class="menu__link" href="about.html">ABOUT US</a></li>
-            <li class="menu__item"><a class="menu__link" href="products.html">PRODUCTS</a></li>
-            <li class="menu__item"><a class="menu__link" href="news.html">LATEST NEWS</a></li>
-            <li class="menu__item"><a class="menu__link" href="catalog.html">CATALOG DOWNLOAD</a></li>
-            <li class="menu__item"><a class="menu__link" href="contact.html">CONTACT US</a></li>
-          </nav>
-          <form class="search" action="" method="post">
+      <div class="is-mobile">
+        <div class="block">
+          <div class="block__btn"><a class="c-btn c-btn--shopping-car" href="inquiry.html">
+              <div class="c-btn__icon c-icon:shopping-car-entity"></div></a></div><a class="block__logo" href="index.html"><img src="img/base/hd-logo.png"><span class="bg-left"></span><span class="bg-right"></span></a>
+          <div class="block__btn jc:end">
+            <div class="c-btn c-btn--toggle">
+              <div class="c-btn__icon"><span></span><span></span><span></span></div>
+            </div>
+          </div>
+        </div>
+        <menu class="menu">
+          <div class="menu__btn">
+            <div class="menu-close">
+              <div class="c-btn c-btn--menu-close">
+                <div class="c-btn__icon c-icon:fork"></div>
+              </div>
+            </div>
+          </div>
+          <form class="search menu__search" action="" method="post">
             <div class="c-fm-search">
               <div class="c-fm__entry">
                 <div class="c-fm__icon c-icon:search"></div>
@@ -49,7 +80,17 @@
               <button class="c-fm__btn u-clear-button" type="submit">Search</button>
             </div>
           </form>
-        </div>
+          <ul class="menu__list u-clear-list">
+            <li><a class="menu-link" href="index.html">HOME</a></li>
+            <li><a class="menu-link" href="about.html">ABOUT US</a></li>
+            <li><a class="menu-link" href="products.html">PRODUCTS</a></li>
+            <li><a class="menu-link" href="news.html">LATEST NEWS</a></li>
+            <li><a class="menu-link" href="catalog.html">CATALOG DOWNLOAD</a></li>
+            <li><a class="menu-link" href="contact.html">CONTACT US</a></li>
+          </ul>
+          <div class="menu__tools"><a class="c-btn c-btn--vip-login" href="login.html">
+              <div class="c-btn__icon c-icon:vip"></div></a></div>
+        </menu>
       </div>
     </header>
     <div class="l-wp-main">
@@ -75,6 +116,10 @@
         <div class="ctr">
           <div class="ctr__sidebar">
             <div class="c-sidebar">
+              <div class="c-sidebar-toggle">
+                <div class="c-sidebar-toggle__label">GATEGORIES</div>
+                <div class="c-sidebar-toggle__icon c-icon:chevron-right"></div>
+              </div>
               <div class="c-sidebar__ctr"><a class="sidebar-headline" href="products.html">GATEGORIES</a>
                 <div class="sidebar-list"><a class="sidebar-list__title" href="products-list.html">REGULAR TYPE</a>
                   <ul class="sidebar-list__items u-clear-list">
@@ -89,7 +134,7 @@
                     <li><a class="sidebar-list__link" href="products-list2.html">Embroidery Foot</a></li>
                   </ul>
                 </div>
-                <div class="sidebar-list"><a class="sidebar-list__title" href="products-list.html">CHOSEN</a>
+                <div class="sidebar-list"><a class="sidebar-list__title" href="products-list.html"><span>CHOSEN</span><img src="img/base/sb-pic01.png" alt=""></a>
                   <ul class="sidebar-list__items u-clear-list">
                     <li><a class="sidebar-list__link" href="products-list2.html">7mm Snap On</a></li>
                     <li><a class="sidebar-list__link" href="products-list2.html">9mm Snap On</a></li>
@@ -97,14 +142,14 @@
                     <li><a class="sidebar-list__link" href="products-list2.html">Hinged/Solid/Accessory</a></li>
                   </ul>
                 </div>
-                <div class="sidebar-list"><a class="sidebar-list__title" href="products-list.html">CHOSEN</a>
+                <div class="sidebar-list"><a class="sidebar-list__title" href="products-list.html">CHOSEN<img src="img/base/sb-pic02.png" alt=""></a>
                   <ul class="sidebar-list__items u-clear-list">
                     <li><a class="sidebar-list__link" href="products-list2.html">Snap On Type</a></li>
                     <li><a class="sidebar-list__link" href="products-list2.html">Overlock/Coverstitch Feet</a></li>
                     <li><a class="sidebar-list__link" href="products-list2.html">Hinged/Solid/Accessory</a></li>
                   </ul>
                 </div>
-                <div class="sidebar-list"><a class="sidebar-list__title" href="products-list.html">CHOSEN</a>
+                <div class="sidebar-list"><a class="sidebar-list__title" href="products-list.html">CHOSEN<img src="img/base/sb-pic03.png" alt=""></a>
                   <ul class="sidebar-list__items u-clear-list">
                     <li><a class="sidebar-list__link" href="products-list2.html">6mm Snap On</a></li>
                     <li><a class="sidebar-list__link" href="products-list2.html">9mm Snap On</a></li>
@@ -130,6 +175,7 @@
                   </ul>
                 </div>
               </div>
+              <div class="c-sidebar__mask"></div>
             </div>
           </div>
           <div class="ctr__main">
@@ -442,11 +488,11 @@
             </ul>
             <div class="c-page-group">
               <div class="c-pagination js-page">
-                <div class="c-pagination__arrow"><a class="c-btn-base is-prev" data-role="prev" aria-label="上一頁"><span class="c-btn__icon c-icon:pagination-prev"></span><span class="c-btn__label">Prev</span></a></div>
+                <div class="c-pagination__arrow"><a class="c-btn-base is-prev" data-role="prev" aria-label="上一頁"><span class="c-btn__icon"><i class="c-icon:chevron-left"></i></span><span class="c-btn__label">Prev</span></a></div>
                 <div class="c-pagination__container">
                   <div class="c-pagination__item"><a class="c-pagination__link is-active" data-page="1">1</a></div>
                 </div>
-                <div class="c-pagination__arrow"><a class="c-btn-base is-next" data-role="next" aria-label="下一頁"><span class="c-btn__label">Next</span><span class="c-btn__icon c-icon:pagination-next"></span></a></div>
+                <div class="c-pagination__arrow"><a class="c-btn-base is-next" data-role="next" aria-label="下一頁"><span class="c-btn__label">Next</span><span class="c-btn__icon"><i class="c-icon:chevron-right"></i></span></a></div>
               </div>
             </div>
           </div>
@@ -457,7 +503,7 @@
       <div class="ft-wp l-wp-1330">
         <div class="logo"><img src="img/base/ft-logo.png" alt="" srcset=""></div>
         <nav class="menu u-clear-list">
-          <li class="menu__item"><a class="menu__link" href="index.html">Home</a></li>
+          <li class="menu__item"><a class="menu__link" href="index.html">HOME</a></li>
           <li class="menu__item"><a class="menu__link" href="about.html">ABOUT US</a></li>
           <li class="menu__item"><a class="menu__link" href="products.html">PRODUCTS</a></li>
           <li class="menu__item"><a class="menu__link" href="news.html">LATEST NEWS</a></li>
@@ -480,10 +526,10 @@
         </div>
       </div>
       <ul class="community u-clear-list">
-        <li class="community__item"><a class="c-icon:square-facebook-brands-solid community__link" href=""></a></li>
-        <li class="community__item"><a class="c-icon:instagram-brands-solid community__link" href=""></a></li>
-        <li class="community__item"><a class="c-icon:line-brands-solid community__link" href=""></a></li>
-        <li class="community__item"><a class="c-icon: community__link" href=""></a></li>
+        <li class="community__item"><a class="c-icon:facebook community__link" href=""></a></li>
+        <li class="community__item"><a class="c-icon:instagram community__link" href=""></a></li>
+        <li class="community__item"><a class="c-icon:line community__link" href=""></a></li>
+        <li class="community__item"><a class="c-icon:youtube community__link" href=""></a></li>
       </ul>
       <div class="copyright"> 2025 Renjyi Enterprise Co., Ltd. | Copyright ©</div>
       <div class="gotop-block js-scroll">
