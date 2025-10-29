@@ -3237,11 +3237,11 @@ a {
   }
   .block__logo .bg-left {
     right: calc(100% + 10px);
-    background-image: url(../img/base/mobile-menu-bg-left.png);
+    background-image: url(../img/base/mobile-menu-bg-left.gif);
   }
   .block__logo .bg-right {
     left: calc(100% + 10px);
-    background-image: url(../img/base/mobile-menu-bg-right.png);
+    background-image: url(../img/base/mobile-menu-bg-right.gif);
   }
   .block__btn {
     width: 40px;
